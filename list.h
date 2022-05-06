@@ -1,3 +1,6 @@
+#ifndef _LIST
+#define _LIST
+
 #define t_elem_list void*
 #define bool int
 #define true 1
@@ -32,3 +35,9 @@ void list_insert(list *L, int index, t_elem_list elem);
 void list_delete(list *L, int index);
 
 void list_traverse(list *L, bool look(t_elem_list elem, int index, void *ctx), void *ctx);
+
+
+
+#include "list.c"
+
+#endif
